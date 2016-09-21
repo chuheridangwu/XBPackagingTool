@@ -22,6 +22,9 @@
 
 + (void)xcodeBuildProjectSetBuildType:(NSString*)buildType{
     
+    // 删除项目之前build的文件夹
+    [XBProjectPath deleteDerivedDataSubFolder];
+    
     //切到项目目录
         NSString *cd = [NSString stringWithFormat:@"cd %@",XB_ProjectPath];
     
