@@ -41,7 +41,7 @@
         NSString *run = [NSString stringWithFormat:@"/usr/bin/xcrun -sdk iphoneos PackageApplication -v %@",[[XBProjectPath sharePProjectPath] projectXcodeBuildPath:buildType]];
     
     // 4.上传到蒲公英
-        NSString *upload = [NSString stringWithFormat:@"curl -F file=@%@ -F uKey=%@ -F _api_key=%@ https://qiniu-storage.pgyer.com/apiv1/app/upload",[NSString stringWithFormat:@"%@%@.ipa",XB_IPAPath,XB_ProjectName],XB_PgyerUserKey,XB_PgyerAPIKey];
+        NSString *upload = [NSString stringWithFormat:@"curl -F file=@%@ -F uKey=%@ -F _api_key=%@ https://www.pgyer.com/apiv1/app/upload",[NSString stringWithFormat:@"%@/%@.ipa",XB_IPAPath,XB_ProjectName],XB_PgyerUserKey,XB_PgyerAPIKey];
   
     
     // 5.运行

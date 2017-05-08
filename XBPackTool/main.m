@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         //打包程序
-        [XBXcodeBuild xcodeBuildProjectSetBuildType:[XBXcodeBuild xcodeBuildType:XcodeBuildType_Release]];
+        [XBXcodeBuild xcodeBuildProjectSetBuildType:[XBXcodeBuild xcodeBuildType:XcodeBuildType_Debug]];
         
         
     }
